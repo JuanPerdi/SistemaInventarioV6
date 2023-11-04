@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "tswbhTlx2TcziXVrZViQd/hKKEJWZhT05D+ToaDkfsiNlqEdVIoahZz9C08dmYhgvLEgwEby79CU4CpIRKP56Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\perdi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\perdi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\perdi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5imxwyv9l4k2L+7w+HKSeb3sjls8UbA1Ld1oNJz+C3w=",
+  "Hash": "nYWhp2P3JmNuYAgwe+tb3zqgjgO6REhT9j76/cy5Vew=",
   "Source": "SistemaInventarioV6",
   "BasePath": "_content/SistemaInventarioV6",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\js\\bodega.js",
+      "SourceId": "SistemaInventarioV6",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\",
+      "BasePath": "_content/SistemaInventarioV6",
+      "RelativePath": "js/bodega.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bodega.js"
     },
     {
       "Identity": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\js\\site.js",

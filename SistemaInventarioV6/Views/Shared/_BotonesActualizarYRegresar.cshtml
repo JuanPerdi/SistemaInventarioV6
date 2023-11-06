@@ -1,0 +1,11 @@
+﻿@model int
+
+<!-- id de asp-route-id es debido a Upsert(int? id) -->
+<button type="submit" class="btn btn-primary" infocus="false" asp-route-id="@Model">
+    <i class="bi bi-pencil-square"></i>
+    Guardar cambios
+</button>
+<a asp-action="Index" class="btn btn-success">
+    <i class="bi bi-arrow-return-left"></i>
+    Volver
+</a>

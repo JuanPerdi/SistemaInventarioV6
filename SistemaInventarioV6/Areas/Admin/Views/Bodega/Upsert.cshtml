@@ -1,8 +1,67 @@
-﻿
+﻿@model SistemaInventario.Modelos.Bodega
 @{
-    ViewData["Title"] = "Upsert";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var titulo = "Crear Bodega";
 }
 
-<h1>Upsert</h1>
+<form method="post">
+    <div class="p-2">
+        <div class="row border-0">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        </div>
+        @if (Model.Id != 0)
+        {
+            //Actualizar
+            titulo = "Actualizar Bodega";
+            <input type="hidden" asp-for="Id">
+        }
+        <div class="col-12 border border-bottom p-0">
+            <h2 class="text-primary">@titulo</h2>
+        </div>
+
+        <div class="row mb-2 mt-2">
+            <div class="form-group col-md-6">
+                <label>Nombre</label>
+                <input type="text" asp-for="Nombre" class="form-control" placeholder="Nombre de la Bodega" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row mb-2 mt-2">
+            <div class="form-group col-md-6">
+                <label>Descripción</label>
+                <input type="text" asp-for="Descripcion" class="form-control" placeholder="Descripción de la Bodega" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row mb-2 mt-2">
+            <div class="form-group col-md-6">
+                <label>Estado</label>
+                <select asp-for="Estado" class="form-select">
+                    <option value="true">Activo</option>
+                    <option value="false">Inactivo</option>
+
+                </select>
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+        </div>
+        <br />
+        <div>
+            @if (Model.Id != 0)
+            {
+                <partial name="_BotonesActualizarYRegresar" model="Model.Id"/>
+            }
+            else
+            {
+                <partial name="_BotonesCrearYRegresar"/>
+
+            }
+        </div>
+
+    </div>
+</form>
+
+@section Scripts{
+    <!-- Esto sirve para hacer las validaciones en el lado del cliente -->
+    <partial name="_ValidationScriptsPartial" />
+}
 

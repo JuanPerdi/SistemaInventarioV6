@@ -82,7 +82,7 @@ namespace SistemaInventario.AccesoDatos.Repositorio
 
         
 
-        public void Remove(T entidad)
+        public void Remover(T entidad)
         {
             dbSet.Remove(entidad);  
         }

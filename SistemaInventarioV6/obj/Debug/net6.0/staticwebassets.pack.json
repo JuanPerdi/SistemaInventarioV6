@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\js\\marca.js"
     },
     {
+      "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\js\\producto.js",
+      "PackagePath": "staticwebassets\\js\\producto.js"
+    },
+    {
       "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SistemaInventario.AccesoDatos.Data;
 using SistemaInventario.AccesoDatos.Repositorio.IRepositorio;
 using SistemaInventario.Modelos;
 using SistemaInventario.Utilidades;
@@ -19,7 +20,27 @@ namespace SistemaInventarioV6.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Upsert(int? id)
         {
-            return View();
+            ProductoVM productoVM = new ProductoVM()
+            {
+                Producto = new Producto(),
+                CategoriaLista = _unidadTrabajo.Producto.ObtenerTodosDropDownLista("Categoria"),
+                MarcaLista = _unidadTrabajo.Producto.ObtenerTodosDropDownLista("Marca")
+            };
+            if(id == null)
+            {
+                //crear nuevo producto
+                return View(productoVM);
+            }
+            else
+            {
+                productoVM.Producto=await _unidadTrabajo.Producto.Obtener(id.GetValueOrDefault());
+                if(productoVM.Producto == null)
+                {
+                    return NotFound();
+                }
+                return View(productoVM);
+            }
+            
         }
 
        

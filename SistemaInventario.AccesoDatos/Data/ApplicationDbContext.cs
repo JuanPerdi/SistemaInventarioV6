@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Modelos;
-using SistemaInventario.Modelos.ViewModels;
 using System.Reflection;
 
 namespace SistemaInventario.AccesoDatos.Data

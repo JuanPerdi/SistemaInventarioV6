@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\imagenes\\producto\\2deda090-c932-46fc-b42d-497a57222a12.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\2deda090-c932-46fc-b42d-497a57222a12.JPG"
+    },
+    {
+      "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\imagenes\\producto\\5381fad8-74ff-410c-b3dc-940ff5ebe7c2.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\5381fad8-74ff-410c-b3dc-940ff5ebe7c2.JPG"
+    },
+    {
       "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\js\\bodega.js",
       "PackagePath": "staticwebassets\\js\\bodega.js"
     },

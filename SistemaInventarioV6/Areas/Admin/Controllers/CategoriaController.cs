@@ -40,7 +40,7 @@ namespace SistemaInventarioV6.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]//evitar falsifiación de solicitudes
         public async Task<IActionResult> Upsert (Categoria categoria)
         {
-            if(ModelState.IsValid) //comrpueba si el modelo es válido en todas sus propiedades
+            if(ModelState.IsValid) //comprueba si el modelo es válido en todas sus propiedades
             {
                 if (categoria.Id==0) //Nuevo registro
                 {

@@ -21,18 +21,18 @@ function loadDataTable() {
             }
         },
         "ajax": {
-            "url":"/Admin/Producto/ObtenerTodos"
+            "url": "/Admin/Producto/ObtenerTodos"
         },
         "columns": [
-            { "data": "numeroSerie"},
+            { "data": "numeroSerie", width:"20%" },
             { "data": "descripcion" },
             { "data": "categoria.nombre" },
             { "data": "marca.nombre" },
             {
                 "data": "precio", "className": "text-end",
                 "render": function (data) {
-                    var d = data.toFixed(2).replace(/\d(?=(\d{3})+\.)/g. '$&,')//transformar en formato de precio
-                    return d;
+                    var d = data.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+                    return d
                 }
             },
             {
@@ -51,24 +51,26 @@ function loadDataTable() {
                 "render": function (data) {
                     return `
                         <div class="text-center">
-                            <a href="/Admin/Producto/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
-                                <i class="bi bi-pencil-fill"></i>
-                            </a>
-                            <a onclick=Delete("/Admin/Producto/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
-                                <i class="bi bi-trash-fill"></i>
-                            </a>
+                           <a href="/Admin/Producto/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
+                              <i class="bi bi-pencil-square"></i>  
+                           </a>
+                           <a onclick=Delete("/Admin/Producto/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
+                                <i class="bi bi-trash3-fill"></i>
+                           </a> 
                         </div>
-                    ` 
-                },"width":"20%"
+                    `;
+                }, "width": "20%"
             }
         ]
+
     });
 }
 
 function Delete(url) {
+
     swal({
-        title: "Está seguro de eliminar el producto?",
-        text: "Este registro no se podrá recuperar",
+        title: "Esta seguro de Eliminar el Producto?",
+        text: "Este registro no se podra recuperar",
         icon: "warning",
         buttons: true,
         dangerMode: true
@@ -86,7 +88,7 @@ function Delete(url) {
                         toastr.error(data.message);
                     }
                 }
-            })
+            });
         }
     });
 }

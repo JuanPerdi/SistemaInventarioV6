@@ -13,12 +13,40 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\imagenes\\icono.ico",
+      "PackagePath": "staticwebassets\\imagenes\\icono.ico"
+    },
+    {
+      "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\imagenes\\icono.png",
+      "PackagePath": "staticwebassets\\imagenes\\icono.png"
+    },
+    {
       "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\imagenes\\producto\\2deda090-c932-46fc-b42d-497a57222a12.JPG",
       "PackagePath": "staticwebassets\\imagenes\\producto\\2deda090-c932-46fc-b42d-497a57222a12.JPG"
     },
     {
+      "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\imagenes\\producto\\3a75b5f2-1e5c-4fa3-88e0-6ee524c84754.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\3a75b5f2-1e5c-4fa3-88e0-6ee524c84754.JPG"
+    },
+    {
+      "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\imagenes\\producto\\40c68c41-140b-49a5-80ce-0841dd84f650.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\40c68c41-140b-49a5-80ce-0841dd84f650.JPG"
+    },
+    {
+      "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\imagenes\\producto\\454f28dc-63fa-4567-aeec-a12e00b2fbc5.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\454f28dc-63fa-4567-aeec-a12e00b2fbc5.JPG"
+    },
+    {
       "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\imagenes\\producto\\5381fad8-74ff-410c-b3dc-940ff5ebe7c2.JPG",
       "PackagePath": "staticwebassets\\imagenes\\producto\\5381fad8-74ff-410c-b3dc-940ff5ebe7c2.JPG"
+    },
+    {
+      "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\imagenes\\producto\\bac11944-eba8-4807-b7e8-9c2d5292d4d7.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\bac11944-eba8-4807-b7e8-9c2d5292d4d7.JPG"
+    },
+    {
+      "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\imagenes\\producto\\e50334a0-34d7-41b9-8a06-11e206f3a61c.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\e50334a0-34d7-41b9-8a06-11e206f3a61c.JPG"
     },
     {
       "Id": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\js\\bodega.js",

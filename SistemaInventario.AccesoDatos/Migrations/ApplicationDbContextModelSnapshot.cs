@@ -86,6 +86,10 @@ namespace SistemaInventario.AccesoDatos.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -137,6 +141,8 @@ namespace SistemaInventario.AccesoDatos.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -302,7 +308,7 @@ namespace SistemaInventario.AccesoDatos.Migrations
                     b.ToTable("Marcas");
                 });
 
-            modelBuilder.Entity("SistemaInventario.Modelos.ViewModels.Producto", b =>
+            modelBuilder.Entity("SistemaInventario.Modelos.Producto", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -350,6 +356,38 @@ namespace SistemaInventario.AccesoDatos.Migrations
                     b.HasIndex("PadreId");
 
                     b.ToTable("Productos");
+                });
+
+            modelBuilder.Entity("SistemaInventario.Modelos.UsuarioAplicacion", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<string>("Apellidos")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
+
+                    b.Property<string>("Ciudad")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
+
+                    b.Property<string>("Direccion")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Nombres")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
+
+                    b.Property<string>("Pais")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
+
+                    b.HasDiscriminator().HasValue("UsuarioAplicacion");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -403,7 +441,7 @@ namespace SistemaInventario.AccesoDatos.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("SistemaInventario.Modelos.ViewModels.Producto", b =>
+            modelBuilder.Entity("SistemaInventario.Modelos.Producto", b =>
                 {
                     b.HasOne("SistemaInventario.Modelos.Categoria", "Categoria")
                         .WithMany()
@@ -417,7 +455,7 @@ namespace SistemaInventario.AccesoDatos.Migrations
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("SistemaInventario.Modelos.ViewModels.Producto", "Padre")
+                    b.HasOne("SistemaInventario.Modelos.Producto", "Padre")
                         .WithMany()
                         .HasForeignKey("PadreId")
                         .OnDelete(DeleteBehavior.NoAction);

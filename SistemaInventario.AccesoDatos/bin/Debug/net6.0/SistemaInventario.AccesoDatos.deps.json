@@ -35,6 +35,7 @@
       "SistemaInventario.AccesoDatos/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.23",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.23",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.23",
           "Microsoft.EntityFrameworkCore": "6.0.23",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.23",

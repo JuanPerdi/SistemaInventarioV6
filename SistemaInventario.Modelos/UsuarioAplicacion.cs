@@ -32,7 +32,7 @@ namespace SistemaInventario.Modelos
         public string Pais { get; set; }
 
         [NotMapped]//No se agrega a la tabla
-        public string Rol { get; set; }
+        public string Role { get; set; }
 
     }
 }

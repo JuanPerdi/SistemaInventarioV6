@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Habanero/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Habanero.BO.dll": {},
+          "lib/Habanero.Base.dll": {},
+          "lib/Habanero.Console.dll": {},
+          "lib/Habanero.DB.dll": {}
+        },
+        "runtime": {
+          "lib/Habanero.BO.dll": {},
+          "lib/Habanero.Base.dll": {},
+          "lib/Habanero.Console.dll": {},
+          "lib/Habanero.DB.dll": {}
+        }
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -4139,6 +4154,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.23",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.23",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.23",
           "Microsoft.EntityFrameworkCore": "6.0.23",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.23",
@@ -4196,6 +4212,21 @@
     }
   },
   "libraries": {
+    "Habanero/3.0.1": {
+      "sha512": "BX8WuZobnYHRU5VYFXYAtZ5Rpm1EgKZhz5cKBFGit5jhW+BNnN/gfjLOJByzZYmc0i5DmMrvBGP6JioR2p3Cqw==",
+      "type": "package",
+      "path": "habanero/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "habanero.3.0.1.nupkg.sha512",
+        "habanero.nuspec",
+        "lib/Habanero.BO.dll",
+        "lib/Habanero.Base.dll",
+        "lib/Habanero.Console.dll",
+        "lib/Habanero.DB.dll"
+      ]
+    },
     "Humanizer/2.14.1": {
       "sha512": "/FUTD3cEceAAmJSCPN9+J+VhGwmL/C12jvwlyM1DFXShEMsBzvLzLqSrJ2rb+k/W2znKw7JyflZgZpyE+tI7lA==",
       "type": "package",
@@ -11627,6 +11658,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Habanero >= 3.0.1",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.23",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.23",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.23",
@@ -11690,6 +11722,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Habanero": {
+            "target": "Package",
+            "version": "[3.0.1, )"
+          },
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.23, )"
@@ -11769,5 +11805,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Habanero 3.0.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Habanero",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

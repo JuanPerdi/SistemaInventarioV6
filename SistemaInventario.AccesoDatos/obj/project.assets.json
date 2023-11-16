@@ -68,6 +68,7 @@
           "Microsoft.AspNetCore.App"
         ],
         "build": {
+          "build/Microsoft.AspNetCore.Identity.UI.props": {},
           "buildTransitive/Microsoft.AspNetCore.Identity.UI.targets": {}
         },
         "buildMultiTargeting": {
@@ -3125,6 +3126,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.23",
+      "Microsoft.AspNetCore.Identity.UI >= 6.0.23",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 6.0.23",
       "Microsoft.EntityFrameworkCore >= 6.0.23",
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.23",
@@ -3181,6 +3183,10 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.23, )"
+          },
+          "Microsoft.AspNetCore.Identity.UI": {
             "target": "Package",
             "version": "[6.0.23, )"
           },

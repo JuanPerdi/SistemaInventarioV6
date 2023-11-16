@@ -580,3 +580,7 @@ C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\
 C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\Habanero.BO.dll
+C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\Habanero.Base.dll
+C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\Habanero.Console.dll
+C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\Habanero.DB.dll

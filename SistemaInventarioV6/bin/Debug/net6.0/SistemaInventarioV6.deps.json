@@ -34,6 +34,7 @@
     ".NETCoreApp,Version=v6.0": {
       "SistemaInventarioV6/1.0.0": {
         "dependencies": {
+          "Habanero": "3.0.1",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.23",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.23",
           "Microsoft.AspNetCore.Identity.UI": "6.0.23",
@@ -340,6 +341,32 @@
         },
         "compile": {
           "SistemaInventarioV6.dll": {}
+        }
+      },
+      "Habanero/3.0.1": {
+        "runtime": {
+          "lib/Habanero.BO.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          },
+          "lib/Habanero.Base.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          },
+          "lib/Habanero.Console.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          },
+          "lib/Habanero.DB.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/Habanero.BO.dll": {},
+          "lib/Habanero.Base.dll": {},
+          "lib/Habanero.Console.dll": {},
+          "lib/Habanero.DB.dll": {}
         }
       },
       "Humanizer/2.14.1": {
@@ -3321,6 +3348,7 @@
       "SistemaInventario.AccesoDatos/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.23",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.23",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.23",
           "Microsoft.EntityFrameworkCore": "6.0.23",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.23",
@@ -5106,6 +5134,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Habanero/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BX8WuZobnYHRU5VYFXYAtZ5Rpm1EgKZhz5cKBFGit5jhW+BNnN/gfjLOJByzZYmc0i5DmMrvBGP6JioR2p3Cqw==",
+      "path": "habanero/3.0.1",
+      "hashPath": "habanero.3.0.1.nupkg.sha512"
     },
     "Humanizer/2.14.1": {
       "type": "package",

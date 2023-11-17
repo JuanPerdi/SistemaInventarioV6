@@ -18,7 +18,16 @@ builder.Services.AddIdentity<IdentityUser,IdentityRole>(options => options.SignI
     .AddErrorDescriber<ErrorDescriber>()
     .AddDefaultTokenProviders()
     .AddEntityFrameworkStores<ApplicationDbContext>();//AddDefauktTokenProviders() permite trabajar con email sender
-builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+//Redirección en caso de que el usuario no esté autorizado
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = $"/Identity/Account/Login";
+    options.LogoutPath = $"/Identity/Account/Logout";
+    options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+});
+
+
 
 //cambiar las reglas de contraseñas
 builder.Services.Configure<IdentityOptions>(options =>
@@ -31,6 +40,7 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.Password.RequiredUniqueChars = 1; //que se repita al menos una vez uno de los caracteres
 });
 
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
 builder.Services.AddScoped<IUnidadTrabajo,UnidadTrabajo>(); 
 

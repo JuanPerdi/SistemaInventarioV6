@@ -176,7 +176,6 @@ namespace SistemaInventarioV6.Areas.Identity.Pages.Account
                     {
                         await _roleManager.CreateAsync(new IdentityRole(DS.Role_Inventario));
                     }
-                    await _userManager.AddToRoleAsync(user,DS.Role_Admin);
 
                     if (user.Role == null) //El Valor que recibe desde el Page
                     {
@@ -218,6 +217,16 @@ namespace SistemaInventarioV6.Areas.Identity.Pages.Account
                         
                     }
                 }
+                //Cargamos el input de nuevo por si el envío del registro ha sido incorrecto
+                Input = new InputModel()
+                {
+                    ListaRol = _roleManager.Roles.Where(r => r.Name != DS.Role_Cliente).Select(n => n.Name).Select(l =>
+                    new SelectListItem
+                    {
+                        Text = l,
+                        Value = l
+                    })
+                };
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);

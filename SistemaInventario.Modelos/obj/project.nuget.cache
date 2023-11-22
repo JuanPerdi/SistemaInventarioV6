@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hmczfACypjz4b3m23LPBcOenG5d/qaPqb/gpKC1irqmf0w+CDpJX2kATSpravf2UcHpZKvnf84Nvog7CLiOIcQ==",
+  "dgSpecHash": "k4ABk1XxDnvpDJUWibQqB+nUs2k4KaU8U5KTE8s7AIYmXz48euOWjw5U+ZDhGkk8fG6esintGPBZguXdgRflBg==",
   "success": true,
   "projectFilePath": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventario.Modelos\\SistemaInventario.Modelos.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,9 @@
     "C:\\Users\\perdi\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\perdi\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\perdi\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\perdi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\perdi\\.nuget\\packages\\sendgrid\\9.28.1\\sendgrid.9.28.1.nupkg.sha512",
+    "C:\\Users\\perdi\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
     "C:\\Users\\perdi\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\perdi\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\perdi\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",

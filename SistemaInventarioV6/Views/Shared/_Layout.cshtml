@@ -90,6 +90,24 @@
                                 </ul>
                             </li>
                         }
+                        @if (User.IsInRole(DS.Role_Admin) || User.IsInRole(DS.Role_Inventario))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Inventario
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a class="dropdown-item" asp-area="Inventario" asp-controller="Inventario" asp-action="Index">
+                                            Sotck Productos
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

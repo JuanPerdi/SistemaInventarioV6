@@ -1,0 +1,18 @@
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SistemaInventario.Modelos.ViewModels
+{
+    //Estas clases las utilizamos cuando vamos a trabajar con varios modelos a la vez
+    public class InventarioVM
+    {
+        public Inventario Inventario { get; set; }
+        public InventarioDetalle InventarioDetalle { get; set; }
+        public List<InventarioDetalle> InventarioDetalles { get; set; }
+        public IEnumerable<SelectListItem> BodegaLista { get; set; }
+    }
+}

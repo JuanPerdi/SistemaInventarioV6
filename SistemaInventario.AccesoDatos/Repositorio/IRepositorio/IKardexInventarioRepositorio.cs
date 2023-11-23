@@ -8,11 +8,8 @@ using System.Threading.Tasks;
 
 namespace SistemaInventario.AccesoDatos.Repositorio.IRepositorio
 {
-    public interface IInventarioRepositorio : IRepositorio<Inventario>
+    public interface IKardexInventarioRepositorio : IRepositorio<KardexInventario>
     {
-        void Actualizar(Inventario inventario);
-
-        IEnumerable<SelectListItem> ObtenerTodosDropDownLista(string obj);
 
     }
 }

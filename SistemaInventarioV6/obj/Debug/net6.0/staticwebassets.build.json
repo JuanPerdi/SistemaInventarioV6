@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ls69RY3JZ5pjyUV7QQMTfsRjS6zK4uLEiS6q3v8h1QA=",
+  "Hash": "tiOTDWltozsgYD8hriGyJfmWQuuLVwFYWgJ/QPiKCBI=",
   "Source": "SistemaInventarioV6",
   "BasePath": "_content/SistemaInventarioV6",
   "Mode": "Default",
@@ -1290,6 +1290,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\categoria.js"
+    },
+    {
+      "Identity": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\js\\inventario.js",
+      "SourceId": "SistemaInventarioV6",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\",
+      "BasePath": "_content/SistemaInventarioV6",
+      "RelativePath": "js/inventario.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\inventario.js"
     },
     {
       "Identity": "C:\\Users\\perdi\\angular\\SistemaInventarioV6\\SistemaInventarioV6\\wwwroot\\js\\marca.js",

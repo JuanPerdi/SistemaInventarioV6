@@ -228,8 +228,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW52ZW50YXJpb1xWaWV3c1xIb21lXFByaXZhY3kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/perdi/angular/SistemaInventarioV6/SistemaInventarioV6/Areas/Inventario/Views/Inventario/DetalleInventario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW52ZW50YXJpb1xWaWV3c1xJbnZlbnRhcmlvXERldGFsbGVJbnZlbnRhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/perdi/angular/SistemaInventarioV6/SistemaInventarioV6/Areas/Inventario/Views/Inventario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW52ZW50YXJpb1xWaWV3c1xJbnZlbnRhcmlvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perdi/angular/SistemaInventarioV6/SistemaInventarioV6/Areas/Inventario/Views/Inventario/NuevoInventario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW52ZW50YXJpb1xWaWV3c1xJbnZlbnRhcmlvXE51ZXZvSW52ZW50YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/perdi/angular/SistemaInventarioV6/SistemaInventarioV6/Areas/Inventario/Views/_ViewImports.cshtml]

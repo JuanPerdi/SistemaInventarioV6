@@ -1,0 +1,24 @@
+﻿@model SistemaInventario.Modelos.ViewModels.InventarioVM
+@{
+    ViewData["Title"] = "DetalleInventario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container p-2">
+    <div class="card-header bg-dark  text-light ml-0 row container">
+        <div class="col-6">
+            Agregar detalle Inventario
+        </div>
+        <div class="col-6 text-end">
+            <a asp-action="Index" class="text-white" style="text-decoration:none;">Salir</a>
+        </div>
+    </div>
+
+    <form mthod="post" class="p-2">
+        <input asp-for="Inventario.Id" id="inventarioId" name="InventarioId" hidden/>
+        <div class="form-checkbtn-group mb-4">
+            <label>Bodega</label>
+            <input asp-for="Inventario.Bodega.Nombre" class="form-control" disabled />
+        </div>
+    </form>
+</div>

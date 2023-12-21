@@ -135,7 +135,7 @@ namespace SistemaInventarioV6.Areas.Admin.Controllers
             var poductoDB = await _unidadTrabajo.Producto.Obtener(id);
             if(poductoDB == null)
             {
-                return Json(new { succes = false, message = "Error al borrar el Producto" });
+                return Json(new { success = false, message = "Error al borrar el Producto" });
             }
 
             //borramos la imagen

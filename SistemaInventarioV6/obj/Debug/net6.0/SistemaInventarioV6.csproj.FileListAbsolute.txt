@@ -586,3 +586,4 @@ C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\
 C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\Habanero.DB.dll
 C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\SendGrid.dll
 C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\Users\perdi\angular\SistemaInventarioV6\SistemaInventarioV6\bin\Debug\net6.0\libman.json
